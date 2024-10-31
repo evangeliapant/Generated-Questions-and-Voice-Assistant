@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Question and Answer App</title>
+</head>
+<body>
+    <h1>Upload PDF and Generate Questions</h1>
+    <input type="file" id="pdfInput" accept=".pdf">
+    <button onclick="uploadPDF()">Upload PDF</button>
+    <div id="questionsContainer"></div>
+    <button id="speakBtn" onclick="speakQuestion()" disabled>Speak Question</button>
+    <button id="listenBtn" onclick="startRecognition()" disabled>Answer Question</button>
+    <p id="answerText">Your answer will appear here...</p>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
